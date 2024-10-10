@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip-Lining in Rizal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        p {
+            text-align: center;
+            color: #333;
+            margin: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .eateries {
+            margin: 20px 0;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .eatery {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .eatery:last-child {
+            border-bottom: none;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zip-Lining in Tanay Rizal</h1>
+    <p>Zip-lining in Rizal offers an exhilarating experience for adventure seekers at locations like Tree Top Adventure and Eco-Adventure Park. These parks feature adrenaline-pumping zip lines that allow you to soar above the lush landscapes, providing breathtaking views of the surrounding mountains and forests. Whether you're gliding through the treetops or racing along a longer course, the thrill of zip-lining is sure to get your heart racing. With various courses available, it's a perfect activity for families and friends looking to add some excitement to their outdoor adventures in Rizal.
+
+
+
+    </p>
+    <div class="gallery">
+        <img src="img/zip1.jpg" alt="Image 1">
+        <img src="img/zip2.jpg" alt="Image 2">
+        <img src="img/zip3.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+    <div class="location">
+        <element class="strong">
+        <h2>Location & Contacts</h2>
+        <p><strong>Address:</strong> Tanay Rizal, Philippines</p>
+        <p><strong>Phone:</strong> +63 912 345 6789</p>
+        <p><strong>Email:</strong> info@ziprizal.com</p>
+        <div id="map">
+        </element>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15338.378893092768!2d120.76082861461754!3d16.034599243788957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391191579e971f7%3A0xc71bc78d42bde6d7!2sRizal%2C%20Natividad%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1728441841733!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        // Function to initialize the map
+        function initMap() {
+            // Coordinates for the location
+            var location = { lat: 13.2578, lng: 123.6852 }; // Adjusted coordinates for Mayon Volcano
+            
+            // Creating the map centered at the given location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: location
+            });
+            
+            // Adding a marker at the specified location
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+ 
+        // Function to open the modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+            initMap(); // Initialize the map when the modal opens
+        }
+ 
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+ www.google.com
+
+ <div class="eateries">
+    <h2>Recommended Eateries Nearby</h2>
+    <div class="eatery">
+        <strong>Eatery 1</strong><br>
+        Address: 123 Food St.<br>
+        Description: Known for delicious local cuisine.
+    </div>
+    <div class="eatery">
+        <strong>Eatery 2</strong><br>
+        Address: 456 Taste Ave.<br>
+        Description: Famous for its seafood dishes.
+    </div>
+    <!-- Add more eateries as needed -->
+</div>
+
+    <button onclick="window.location.href='Populartour.html'">Back to Tourist Spots</button>
+
+</body>
+</html>
